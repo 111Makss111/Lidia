@@ -38,6 +38,7 @@ body{
 /*---------------------------  HEADER  -------------------------------*/
 .header {
     padding-top: 75px;
+    z-index: 2;
 }
 .header__container {
     display: flex;
@@ -86,6 +87,8 @@ body{
 .hero__container {
     display: flex;
 }
+
+
 .hero__container::after,.hero__container::before{
     content: '';
     position: absolute;
@@ -113,6 +116,8 @@ body{
     display: grid;
     align-content: start;
     gap: 30px;
+    padding-right: 20px;
+    z-index: 2;
 }
 .content__tittle {
     font-weight: 800;
@@ -131,9 +136,7 @@ body{
     text-decoration:none;
     color: #4737FF;
 }
-.content__text{
 
-}
 .content__text p {
     font-size: 16px;
     font-weight: 400;
@@ -201,4 +204,52 @@ body{
     justify-self: end;
 
     
+};
+
+@media screen and (max-width: 1440px) {
+
 }
+@media screen and (max-width: 1200px){
+    .hero__container{
+        flex-direction: column;
+    }
+    .hero__images{
+        align-self: center;
+    } 
+    .content__tittle a{
+        text-shadow: 0px 0px 5px  #ffffff;
+    } 
+ 
+}
+@media screen and (max-width: 999px) {
+    .hero__container{
+        flex-direction: column;
+    }
+    .hero__images{
+        align-self: center;
+        margin-top: 20px;
+
+    }
+    .content__tittle{
+        font-size: 56px;
+    } 
+    .content-btn{
+        width: auto;
+    }
+    .header-link{
+        font-size: 18px;
+        text-shadow: 5px 5px 5px  #000;
+    }
+    
+    @media screen and (max-width: 777px){
+        .header__container{
+            flex-wrap: wrap
+        }
+        .header__logo{
+            
+        }
+        .content__tittle{
+            font-size: 44px;
+        } 
+    }
+};
