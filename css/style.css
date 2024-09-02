@@ -292,17 +292,35 @@ body{
     align-items: baseline;
     
 }
-.features__item {
+
+.features__item{
+
+}
+.features__images::before{
+    content: "";
+    display: flex;
     background-color: #4475F2;
     width: 102px;
     height: 102px;
     border-radius: 26px;
+    z-index: 0;
 }
-
 .features__images {
+    
 }
 .features__tittle-text {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2%;
+    color: #000;
+    margin-bottom: 28px;
+    text-align: center;
 }
 .features__text {
-    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    color: #5E6282;
+    text-align: center; 
 }
